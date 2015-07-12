@@ -29,7 +29,15 @@ class ViewController: UIViewController {
         buttonArea.showsHorizontalScrollIndicator = false
         buttonArea.showsVerticalScrollIndicator = false
         self.view.addSubview(buttonArea)
-        
+		
+		
+		var btn : UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+		btn.backgroundColor = UIColor.orangeColor()
+		btn.setTitle("click", forState: UIControlState.Normal)
+		btn.frame = CGRectMake(0, 0, buttonArea.frame.size.width, 40)
+		btn.addTarget(self, action: "click:", forControlEvents: UIControlEvents.TouchUpInside)
+		
+		buttonArea.addSubview(btn)		
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +45,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+	//MARK: -
+	func click(sender : UIButton!)
+	{
+		println("clicked")
+	}
 
     // 창식 commit test
 }
