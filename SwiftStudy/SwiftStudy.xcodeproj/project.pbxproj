@@ -13,6 +13,7 @@
 		52FFDA241B50EC9B00C5E877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FFDA231B50EC9B00C5E877 /* Images.xcassets */; };
 		52FFDA271B50EC9B00C5E877 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FFDA251B50EC9B00C5E877 /* LaunchScreen.xib */; };
 		52FFDA331B50EC9B00C5E877 /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFDA321B50EC9B00C5E877 /* SwiftStudyTests.swift */; };
+		E341861E1B53BADA00E2B676 /* UILabelSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341861C1B53BADA00E2B676 /* UILabelSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		52FFDA2C1B50EC9B00C5E877 /* SwiftStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFDA311B50EC9B00C5E877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FFDA321B50EC9B00C5E877 /* SwiftStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyTests.swift; sourceTree = "<group>"; };
+		E341861C1B53BADA00E2B676 /* UILabelSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelSampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		52FFDA191B50EC9B00C5E877 /* SwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E341861A1B53BADA00E2B676 /* UILabelSample */,
 				52FFDA1C1B50EC9B00C5E877 /* AppDelegate.swift */,
 				52FFDA1E1B50EC9B00C5E877 /* ViewController.swift */,
 				52FFDA201B50EC9B00C5E877 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				52FFDA311B50EC9B00C5E877 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E341861A1B53BADA00E2B676 /* UILabelSample */ = {
+			isa = PBXGroup;
+			children = (
+				E341861C1B53BADA00E2B676 /* UILabelSampleViewController.swift */,
+			);
+			path = UILabelSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E341861E1B53BADA00E2B676 /* UILabelSampleViewController.swift in Sources */,
 				52FFDA1F1B50EC9B00C5E877 /* ViewController.swift in Sources */,
 				52FFDA1D1B50EC9B00C5E877 /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +423,7 @@
 				52FFDA381B50EC9B00C5E877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52FFDA391B50EC9B00C5E877 /* Build configuration list for PBXNativeTarget "SwiftStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				52FFDA3B1B50EC9B00C5E877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
