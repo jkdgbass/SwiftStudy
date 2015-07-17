@@ -14,6 +14,7 @@
 		52FFDA271B50EC9B00C5E877 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FFDA251B50EC9B00C5E877 /* LaunchScreen.xib */; };
 		52FFDA331B50EC9B00C5E877 /* SwiftStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFDA321B50EC9B00C5E877 /* SwiftStudyTests.swift */; };
 		E341861E1B53BADA00E2B676 /* UILabelSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341861C1B53BADA00E2B676 /* UILabelSampleViewController.swift */; };
+		E3D9FB4C1B591CDD007B5367 /* VAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D9FB4B1B591CDD007B5367 /* VAlignLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		52FFDA311B50EC9B00C5E877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FFDA321B50EC9B00C5E877 /* SwiftStudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStudyTests.swift; sourceTree = "<group>"; };
 		E341861C1B53BADA00E2B676 /* UILabelSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelSampleViewController.swift; sourceTree = "<group>"; };
+		E3D9FB4B1B591CDD007B5367 /* VAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAlignLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E341861C1B53BADA00E2B676 /* UILabelSampleViewController.swift */,
+				E3D9FB4B1B591CDD007B5367 /* VAlignLabel.swift */,
 			);
 			path = UILabelSample;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E341861E1B53BADA00E2B676 /* UILabelSampleViewController.swift in Sources */,
+				E3D9FB4C1B591CDD007B5367 /* VAlignLabel.swift in Sources */,
 				52FFDA1F1B50EC9B00C5E877 /* ViewController.swift in Sources */,
 				52FFDA1D1B50EC9B00C5E877 /* AppDelegate.swift in Sources */,
 			);

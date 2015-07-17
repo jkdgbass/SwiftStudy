@@ -79,6 +79,42 @@ class UILabelSampleViewController: UIViewController {
 		self.view .addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[label]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["label" : label]))
 		self.view .addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[prevLabel][label(40)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["label" : label, "prevLabel":prevLabel]))
 		
+		
+		
+		
+		prevLabel = label
+		var topLabel :VAlignLabel = VAlignLabel(valignment: SSTextAlignment.SSTextAlignmentTop)
+		
+		self.view.addSubview(topLabel)
+		
+		topLabel.backgroundColor = UIColor.greenColor()
+		topLabel.text = "top alignment\n 아오 그지 같다. 형변환."
+		topLabel.textAlignment = NSTextAlignment.Center
+		topLabel.numberOfLines = 2
+		
+		topLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+		
+		self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[topLabel]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["topLabel":topLabel]))
+		self.view .addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[prevLabel][topLabel(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["topLabel" : topLabel, "prevLabel":prevLabel]))
+		
+		
+		
+		var bottomLabel :VAlignLabel = VAlignLabel(valignment: SSTextAlignment.SSTextAlignmentBottom)
+		
+		self.view.addSubview(bottomLabel)
+		
+		bottomLabel.backgroundColor = UIColor.blueColor()
+		bottomLabel.text = "bottom alignment\n 아오 그지 같다. 형변환."
+		bottomLabel.textAlignment = NSTextAlignment.Center
+		bottomLabel.numberOfLines = 2
+		
+		bottomLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+		
+		self.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[bottomLabel]|", options: NSLayoutFormatOptions(0), metrics: nil, views: ["bottomLabel":bottomLabel]))
+		self.view .addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[topLabel][bottomLabel(60)]", options: NSLayoutFormatOptions(0), metrics: nil, views: ["topLabel" : topLabel, "bottomLabel":bottomLabel]))
+				
+		
+		
     }
 
     override func didReceiveMemoryWarning() {
